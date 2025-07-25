@@ -1,0 +1,52 @@
+{
+  "name": "Course",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "課程名稱"
+    },
+    "code": {
+      "type": "string",
+      "description": "課程代碼"
+    },
+    "semester": {
+      "type": "string",
+      "description": "開課學期"
+    },
+    "year": {
+      "type": "integer",
+      "description": "開課年份"
+    },
+    "credits": {
+      "type": "integer",
+      "description": "學分數"
+    },
+    "description": {
+      "type": "string",
+      "description": "課程描述"
+    },
+    "syllabus_url": {
+      "type": "string",
+      "description": "課程大綱連結"
+    },
+    "instructor": {
+      "type": "string",
+      "description": "授課教師"
+    },
+    "level": {
+      "type": "string",
+      "enum": [
+        "大學部",
+        "碩士班",
+        "博士班"
+      ],
+      "description": "開課層級"
+    }
+  },
+  "required": [
+    "title",
+    "year",
+    "semester"
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "name": "Award",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "獎項名稱"
+    },
+    "recipient": {
+      "type": "string",
+      "description": "得獎人"
+    },
+    "organization": {
+      "type": "string",
+      "description": "頒獎機構"
+    },
+    "year": {
+      "type": "integer",
+      "description": "得獎年份"
+    },
+    "description": {
+      "type": "string",
+      "description": "獎項描述"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "學術獎項",
+        "教學獎項",
+        "服務獎項",
+        "學生獎項"
+      ],
+      "description": "獎項類別"
+    },
+    "certificate_url": {
+      "type": "string",
+      "description": "獎狀圖片"
+    }
+  },
+  "required": [
+    "title",
+    "recipient",
+    "year"
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "name": "Member",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "成員姓名"
+    },
+    "position": {
+      "type": "string",
+      "enum": [
+        "博士生",
+        "碩士生",
+        "大學生",
+        "研究助理",
+        "博士後研究員"
+      ],
+      "description": "職位"
+    },
+    "year": {
+      "type": "string",
+      "description": "入學年份或加入年份"
+    },
+    "research_topic": {
+      "type": "string",
+      "description": "研究主題"
+    },
+    "email": {
+      "type": "string",
+      "description": "電子郵件"
+    },
+    "photo_url": {
+      "type": "string",
+      "description": "照片網址"
+    },
+    "bio": {
+      "type": "string",
+      "description": "個人簡介"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "在學",
+        "已畢業",
+        "已離職"
+      ],
+      "default": "在學",
+      "description": "狀態"
+    },
+    "graduation_year": {
+      "type": "string",
+      "description": "畢業年份"
+    }
+  },
+  "required": [
+    "name",
+    "position"
+  ]
+}

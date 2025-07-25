@@ -1,0 +1,51 @@
+{
+  "name": "Teacher",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "教師姓名"
+    },
+    "title": {
+      "type": "string",
+      "description": "職稱"
+    },
+    "email": {
+      "type": "string",
+      "description": "電子郵件"
+    },
+    "phone": {
+      "type": "string",
+      "description": "聯絡電話"
+    },
+    "bio": {
+      "type": "string",
+      "description": "個人簡介"
+    },
+    "education": {
+      "type": "string",
+      "description": "學歷背景"
+    },
+    "research_interests": {
+      "type": "string",
+      "description": "研究興趣"
+    },
+    "office": {
+      "type": "string",
+      "description": "辦公室位置"
+    },
+    "photo_url": {
+      "type": "string",
+      "description": "照片網址"
+    },
+    "is_primary": {
+      "type": "boolean",
+      "default": false,
+      "description": "是否為主要指導教授"
+    }
+  },
+  "required": [
+    "name",
+    "title"
+  ]
+}

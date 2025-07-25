@@ -1,0 +1,65 @@
+{
+  "name": "Research",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "研究專案標題"
+    },
+    "description": {
+      "type": "string",
+      "description": "研究專案描述"
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "研究方向",
+        "研究專案"
+      ],
+      "description": "類型"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "進行中",
+        "已完成",
+        "計劃中"
+      ],
+      "default": "進行中",
+      "description": "狀態"
+    },
+    "start_year": {
+      "type": "integer",
+      "description": "開始年份"
+    },
+    "end_year": {
+      "type": "integer",
+      "description": "結束年份"
+    },
+    "funding_source": {
+      "type": "string",
+      "description": "資助來源"
+    },
+    "budget": {
+      "type": "string",
+      "description": "預算"
+    },
+    "participants": {
+      "type": "string",
+      "description": "參與人員"
+    },
+    "image_url": {
+      "type": "string",
+      "description": "專案圖片"
+    },
+    "keywords": {
+      "type": "string",
+      "description": "關鍵字"
+    }
+  },
+  "required": [
+    "title",
+    "description",
+    "type"
+  ]
+}

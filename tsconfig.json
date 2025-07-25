@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",             // 一定要
+    "paths": {
+      "@/*": ["src/*"]          // 依你的資料夾調整
+    }
+  },
+  "include": ["src", "vite.config.*"]
+}

@@ -1,0 +1,58 @@
+{
+  "name": "Publication",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "論文標題"
+    },
+    "authors": {
+      "type": "string",
+      "description": "作者列表"
+    },
+    "journal": {
+      "type": "string",
+      "description": "期刊或會議名稱"
+    },
+    "year": {
+      "type": "integer",
+      "description": "發表年份"
+    },
+    "volume": {
+      "type": "string",
+      "description": "卷期"
+    },
+    "pages": {
+      "type": "string",
+      "description": "頁數"
+    },
+    "doi": {
+      "type": "string",
+      "description": "DOI"
+    },
+    "pdf_url": {
+      "type": "string",
+      "description": "PDF連結"
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "期刊論文",
+        "會議論文",
+        "書籍章節",
+        "專利"
+      ],
+      "description": "發表類型"
+    },
+    "abstract": {
+      "type": "string",
+      "description": "摘要"
+    }
+  },
+  "required": [
+    "title",
+    "authors",
+    "year",
+    "type"
+  ]
+}
